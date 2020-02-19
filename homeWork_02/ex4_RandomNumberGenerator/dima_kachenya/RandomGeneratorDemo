@@ -1,0 +1,21 @@
+package com.company;
+
+import java.util.Random;
+
+public class RandomGeneratorDemo {
+    public static void GenRanNum()
+    {
+
+        int a =(int) (Math.random()*10)+1;
+        int b =(int) (Math.random()*a)+3;
+        int c =(int) (Math.random()*b)-20;
+        int rez=a+b+c;
+        System.out.println("a="+a);
+        System.out.println("b="+b);
+        System.out.println("c="+c);
+        System.out.println("Sum="+rez);
+
+
+
+    }
+}
