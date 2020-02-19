@@ -1,0 +1,32 @@
+package com.company;
+
+public class Human {
+    String name;
+    int age;
+    public String getName()
+    {
+        return name;
+    }
+    public void setName(String  value)
+    {
+        name=value;
+    }
+    public int getAge()
+    {
+        return age;
+    }
+    public void setAge(int value)
+    {
+        age=value;
+    }
+    public Human(String name,int age)
+    {
+        this.name=name;
+        this.age=age;
+    }
+    public void greet()
+    {
+        System.out.println("Name : "+name+"\nAge : "+age);
+    }
+
+}
