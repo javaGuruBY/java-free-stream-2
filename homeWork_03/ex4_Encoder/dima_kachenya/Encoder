@@ -1,0 +1,14 @@
+package com.company;
+
+public class Encoder {
+    public static void encode(short code)
+    {
+        char symbols=(char)code;
+        System.out.println(symbols);
+    }
+    public static void decode(char symbol)
+    {
+        short myShort=(short)symbol;
+        System.out.println(myShort);
+    }
+}
