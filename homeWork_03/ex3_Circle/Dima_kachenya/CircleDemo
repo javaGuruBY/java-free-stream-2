@@ -1,0 +1,10 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Circle myCircle=new Circle(2);
+        System.out.println(myCircle.calculateArea());//12.566370614359172
+    }
+}
