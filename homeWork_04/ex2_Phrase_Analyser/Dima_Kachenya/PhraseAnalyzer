@@ -1,0 +1,16 @@
+package com.company;
+
+public class PhraseAnalyser {
+    public  String analyse(String text) {
+        //"It stands no chance", если строка начинается со слов "Make" и заканчивается на "great again";
+        //"It could be worse", если строка начинается со слов "Make" или заканчивается на "great again";
+        //"It is fine, really", если строка не подходит под критерии выше;
+        String[] words = text.split("\\s"); // Разбиение строки на слова с помощью разграничителя (пробел)
+        if(words[0].equals( "Make") && words[words.length-1].equals("again")&& words[words.length-2].equals("great"))
+            return "It stands no chance";
+        else if(words[0].equals( "Make") || (words[words.length-1].equals("again")&& words[words.length-2].equals("great")))
+            return "It could be worse";
+        else
+           return "It is fine, really";
+    }
+}
