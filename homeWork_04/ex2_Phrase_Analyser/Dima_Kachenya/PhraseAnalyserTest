@@ -1,0 +1,18 @@
+package com.company;
+
+import javax.xml.crypto.dsig.keyinfo.PGPData;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        PhraseAnalyser x=new PhraseAnalyser();
+        String str="Make great again";
+        System.out.println(x.analyse(str));
+        System.out.println(x.analyse("Make some word great "));
+        System.out.println(x.analyse(" some word great again"));
+        System.out.println(x.analyse("Make some word  again"));
+        System.out.println(x.analyse(" some word "));
+
+    }
+}
