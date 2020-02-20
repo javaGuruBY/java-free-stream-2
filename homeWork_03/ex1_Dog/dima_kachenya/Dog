@@ -1,0 +1,50 @@
+package com.company;
+
+public class Dog {
+    private int age;
+    private String color;
+    private String name;
+
+    public Dog(int age,String color,String name) {
+        this.age=age;
+        this.name=name;
+        this.color=color;
+    }
+    public int getAge()
+    {
+        return age;
+    }
+    public void setAge(int value)
+    {
+        age=value;
+    }
+    public String getColor()
+    {
+        return color;
+    }
+    public void setColor(String value)
+    {
+        color=value;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public void setName(String value)
+    {
+        name=value;
+    }
+
+    public void Voice()
+    {
+        System.out.printf("Gaf-Gaf");
+    }
+    public void eat()
+    {
+        System.out.printf("I am eat");
+    }
+    public  void Sleep()
+    {
+        System.out.printf("I am sleep");
+    }
+}
