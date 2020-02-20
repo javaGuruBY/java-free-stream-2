@@ -1,0 +1,22 @@
+package com.company;
+
+import sun.rmi.server.UnicastServerRef;
+
+public class Main {
+
+    public static void main(String[] args) {
+		User dima=new User("kachenya2015", "111");
+		UserLoginService myServer=new UserLoginService();
+		myServer.login(dima, "1111");
+		myServer.login(dima, "1111");
+		myServer.login(dima, "1111");
+		myServer.login(dima, "1111");
+		myServer.login(dima, "1111");
+		dima.reset();
+		myServer.login(dima, "1111");
+		myServer.login(dima, "111");
+		dima.blockUser();
+		myServer.login(dima, "1111");
+
+	}
+}
