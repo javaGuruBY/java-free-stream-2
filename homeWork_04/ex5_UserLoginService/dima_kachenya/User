@@ -1,0 +1,31 @@
+package com.company;
+
+public class User {
+    public String login;
+    public String password;
+    public boolean isBlock;
+    public int countEnter;
+    public User(String login,String password)
+    {
+        this.login=login;
+        this.password=password;
+        isBlock=false;
+        countEnter=0;
+    }
+    public void  reset()
+    {
+        System.out.println("Обновлено колличество попыток");
+        countEnter=0;
+        if(isBlock)
+        {
+            System.out.println("Пользователь разблокирован");
+            isBlock=false;
+        }
+    }
+    public void blockUser()
+    {
+        System.out.println("Пользователь заблокирован");
+        isBlock=true;
+    }
+
+}
