@@ -1,0 +1,25 @@
+package com.company;
+
+public class UserLoginService {
+    boolean login(User user, String password) {
+        if(user.isBlock){
+            System.out.println("Пользователь заблокирован!");
+            return false;
+        }
+        if(user.password == password){
+            user.reset();
+            System.out.println("Вы вошли на сервер");
+            return true;
+        } else {
+            if(user.countEnter != 3){
+
+                user.countEnter++;
+                System.out.println("У вас осталось :" + (3 - user.countEnter) + "Попыток");
+            } else
+                user.blockUser();
+
+            return false;
+        }
+
+    }
+}
