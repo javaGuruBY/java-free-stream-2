@@ -1,0 +1,11 @@
+package com.company;
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Product myProduct=new Product("Milk");
+        myProduct.regularPrice=0.8d;
+        myProduct.discount=20;
+        myProduct.printInformation();
+    }
+}
