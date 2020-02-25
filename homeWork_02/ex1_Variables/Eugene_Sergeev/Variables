@@ -3,8 +3,8 @@
       3.   int firstNumber;
       4.   boolean answer;
       5.   double randomNumber;
-      6.   double generatorOfRandomNumbers;
-      7.   long carColor;
+      6.   String generatorOfRandomNumbers;
+      7.   String carColor;
       8.   int carsSpeed;
       9.   int numberIntroducedByUser;
       10.  int biggestNumber;
@@ -12,7 +12,7 @@
       12.  int leftBoarderOfNumberRange;
       13.  int rightBoarderOfNumberRange;
       14.  int numberThoughtByUser;
-      15.  int answerVariant;
+      15.  String answerVariant;
       16.  long bankAccount;
       17.  double bankBalance;
       18.  long creditCard;
