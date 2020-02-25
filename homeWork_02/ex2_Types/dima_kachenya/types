@@ -1,29 +1,29 @@
 Количество кораблей в порту
-int long byte short
+byte
 Счетчик целых чисел
-int long byte short
+int
 Первое целое число
-int long byte short
+int 
 Случайное целое число
-int long byte short
+int
 Случайное вещественное число
-float double
+double
 Скорость движения автомобиля
-int long byte short
+short
 Введенное пользователем целое число
-int long byte short
+int
 Наибольшее целое число
-int long byte short
+long
 Наименьшее вещественное число
-int long byte short
+float
 Левая граница диапазона целых чисел
-int long byte short
+int 
 Правая граница диапазона целых чисел
-int long byte short
+int 
 Загаданное пользователем целое число
-int long byte short
+int 
 Денежный баланс
-double float
+float
 Количество колес у велосипеда
 byte
 Голодный ли человек
@@ -33,8 +33,8 @@ char
 Четное ли число
 boolean
 Текущий год
-int
+short
 Знак пробела
 char
 Стоимость билета
-float double
+float 
