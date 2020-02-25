@@ -1,0 +1,25 @@
+package com.company;
+
+public class MathOperationsDemo {
+    public void Add(int a,int b)
+    {
+        System.out.println(a+b);
+    }
+
+    public void Sub(int a,int b)
+    {
+        System.out.println(a-b);
+    }
+
+    public void Star(int a,int b)
+    {
+        System.out.println(a*b);
+    }
+
+    public void Div(double a,double b)
+    {
+        if(b==0)
+          return;
+        System.out.println(a/b);
+    }
+}
