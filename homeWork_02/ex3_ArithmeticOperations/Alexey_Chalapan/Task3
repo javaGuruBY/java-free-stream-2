@@ -1,0 +1,31 @@
+public class MathOperationsDemo {
+    public static void main(String[] args) {
+        int x = 64;
+        int y = 36;
+        System.out.println("Addition");
+        System.out.println(" x = " + x + ", y=" + y);
+        int sum = x + y;
+        System.out.println(" x + y = " + x + "+" + y + "=" + sum);
+        System.out.println();
+        System.out.println(" Subtraction");
+        int a = 65;
+        int b = 26;
+        System.out.println("a = " + a + ", b = " + b);
+        int difference = a - b;
+        System.out.println("a - b = " + a + " - " + b + " = " + difference);
+        System.out.println();
+        System.out.println("Division");
+        float q = 65;
+        float w = 15;
+        System.out.println("q = " + q + ", w = " + w);
+        float Division = q / w;
+        System.out.println("q / w =" + q + "/" + w + "=" + Division);
+        System.out.println();
+        System.out.println("Result");
+        int r = 5;
+        int t = 8;
+        System.out.println("r = "+ r + ", t =" + t);
+        int result = r * t;
+        System.out.println("r * t = " + r + " * " + t + " = " + result);
+    }
+}
