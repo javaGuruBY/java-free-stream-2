@@ -1,0 +1,56 @@
+package com.company;
+
+public class MathOperationsDemo<Addition> {
+
+    public static void main(String[] args) {
+        System.out.println("Welcom to the 'MathOperationsDemo!'");
+
+        int a = 15;
+        int b = 3;
+
+        System.out.println("1) Addition '+':");
+        System.out.print("a = ");
+        System.out.print(a);
+        System.out.print(", ");
+        System.out.print("b = ");
+        System.out.print(b);
+
+        int sum = a + b;
+        System.out.println();
+        System.out.print("a + b = ");
+        System.out.print(a);
+        System.out.print(" + ");
+        System.out.print(b);
+        System.out.print(" = ");
+        System.out.print(sum);
+
+        System.out.println();
+        System.out.println();
+        System.out.println("2) Substraction '-':");
+
+        long x = 28;
+        long y = 13;
+
+        System.out.println("x = " + x + ", y = " + y);
+        long difference = x - y;
+        System.out.println("x - y= " + x + " - " + y + " = " + difference);
+
+        System.out.println();
+        System.out.println("3) Division '/':");
+
+        short m = 15;
+        short n = 5;
+
+        System.out.println("m = " + m + ", n = " + n);
+        System.out.println("m / n = " + m + " / " + n + " = " + 15 / 5);
+
+        System.out.println();
+        System.out.println("4) Multiplication '*':");
+
+        short r = 13;
+        short w = 5;
+
+        System.out.println("r = " + r + ", w = " + w);
+        System.out.println("r * w = " + r + " * " + w + " = " + 13 * 5);
+    }
+}
