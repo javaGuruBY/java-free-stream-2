@@ -8,6 +8,7 @@ public class MathOperationsDemo {
         int resultDifference = a - b;
         int resultMultiplication = a * b;
         int resultDivision = a + b;
+        System.out.println("Пример математических вычислений тип переменных int");
         System.out.print("a = ");
         System.out.println(a);
         System.out.print("b = ");
