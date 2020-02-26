@@ -1,0 +1,19 @@
+import java.util.Random;
+
+public class randomGeneratorDemo {
+
+    public static void main(String[] args) {
+        System.out.println("Сгенерируем 3 случайных числа");
+        Random randomGeneral = new Random();
+        int x = randomGeneral.nextInt(33);
+        int y = randomGeneral.nextInt(5);
+        int z = randomGeneral.nextInt(222);
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
+        System.out.println();
+        System.out.println("Выполним операцию сложения");
+        int sum = x + z + y;
+        System.out.println(" x + y + y = " + x + "+" + z + "+" + y + "=" + sum);
+    }
+}
