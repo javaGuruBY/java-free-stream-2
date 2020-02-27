@@ -2,7 +2,7 @@ package by.nikalaylukashevich;
 
 public class mathoperationdemo {
 
-    public static void  main (string [] args ) {
+    public static void main(String[] args) {
         System.out.println("Welcome to the 'Math Operations'!");
         int a = 500;
         int b = 100;
@@ -15,7 +15,7 @@ public class mathoperationdemo {
         System.out.print(a);
         System.out.print(", ");
         System.out.print("b = ");
-        System.out.print(b);
+        System.out.println(b);
 
         System.out.print("a + b = ");
         System.out.print(a);
