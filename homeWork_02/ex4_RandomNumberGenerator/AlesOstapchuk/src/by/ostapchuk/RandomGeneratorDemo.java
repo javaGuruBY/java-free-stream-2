@@ -1,7 +1,5 @@
-package by.Ostapchuk;
-
+package by.ostapchuk;
 import java.util.Random;
-
 public class RandomGeneratorDemo {
     public static void main(String[] args){
         double a = Math.random()+20;
