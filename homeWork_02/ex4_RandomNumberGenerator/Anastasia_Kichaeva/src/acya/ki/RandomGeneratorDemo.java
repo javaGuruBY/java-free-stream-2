@@ -6,9 +6,9 @@ public class RandomGeneratorDemo {
     public static void main(String[] args) {
         int[] array = new int[3];
         int rand;
-        Random r = new Random();
+        Random random = new Random();
         for (int i = 0; i < 3; i++) {
-            rand = r.nextInt();
+            rand = random.nextInt();
             array[i] = (int) rand;
         }
         for (int c : array)
