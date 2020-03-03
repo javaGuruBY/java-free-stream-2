@@ -12,9 +12,10 @@ public class DogDemo {
         dogOne.sleep(dogOne.age);
 
 
-        Dog dogTwo = new Dog(2, "black", "Malysh");
+        Dog dogTwo = new Dog("Malysh", "black", 2);
         dogTwo.voice(dogTwo.name, dogTwo.color, dogTwo.age);
         dogTwo.eat();
         dogTwo.sleep(dogTwo.age);
+
     }
 }
