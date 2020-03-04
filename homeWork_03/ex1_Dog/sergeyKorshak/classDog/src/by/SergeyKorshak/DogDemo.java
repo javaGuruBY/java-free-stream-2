@@ -7,15 +7,15 @@ public class DogDemo {
         dogOne.name = "Baskerville";
         dogOne.color = "brown";
         dogOne.age = 16;
-        dogOne.voice(dogOne.name, dogOne.color, dogOne.age);
+        dogOne.voice();
         dogOne.eat();
-        dogOne.sleep(dogOne.age);
+        dogOne.sleep();
 
 
         Dog dogTwo = new Dog("Malysh", "black", 2);
-        dogTwo.voice(dogTwo.name, dogTwo.color, dogTwo.age);
+        dogTwo.voice();
         dogTwo.eat();
-        dogTwo.sleep(dogTwo.age);
+        dogTwo.sleep();
 
     }
 }
