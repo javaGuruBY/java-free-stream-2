@@ -10,7 +10,7 @@ public class Human {
         this.age = age;
     }
 
-    public void greet(String name, int age) {
+    public void greet() {
         System.out.println("Hi! My name is " + name + ", I'm " + age + " years old");
 
     }
