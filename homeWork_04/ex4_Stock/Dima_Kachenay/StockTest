@@ -1,0 +1,41 @@
+package com.company;
+
+public class StockTest {
+
+    private static void check(int actualValueForCurrentPrice, int actualValueForMinPrice, int actualValueForMaxPrice, Stock expectedValue, String testName) {
+        if(actualValueForMaxPrice == expectedValue.maxPrice &&
+                actualValueForCurrentPrice == expectedValue.currentPrice &&
+                actualValueForMinPrice == expectedValue.minPrice){
+            System.out.println(testName + " has been passed!");
+        } else {
+            System.out.println(testName + ", has been failed!");
+            // System.out.println("the actual value = " + actualValue + " is not equal to the expected =" + expectedValue);
+            if(actualValueForMaxPrice != expectedValue.maxPrice){
+                System.out.println("the actual value for max price = " + actualValueForMaxPrice +
+                        " is not equal to the expected max price =" + expectedValue.maxPrice);
+            }
+            if(actualValueForCurrentPrice != expectedValue.currentPrice){
+
+                System.out.println("the actual value for max price = " + actualValueForCurrentPrice +
+                        " is not equal to the expected max price =" + expectedValue.currentPrice);
+            }
+            if(actualValueForMinPrice != expectedValue.minPrice){
+
+                System.out.println("the actual value for max price = " + actualValueForMinPrice +
+                        " is not equal to the expected max price =" + expectedValue.minPrice);
+            }
+        }
+    }
+
+
+    public static void test1() {
+        Stock google=new Stock("Dima Company", 10);
+        String testName="Test 1";
+        google.updatePrice(15);
+        google.updatePrice(7);
+        google.updatePrice(14);
+        int actualValueForCurrentPrice=14, actualValueForMinPrice=7, actualValueForMaxPrice=15;
+        check(actualValueForCurrentPrice, actualValueForMinPrice, actualValueForMaxPrice, google, testName);
+
+    }
+}
