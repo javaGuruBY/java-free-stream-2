@@ -1,0 +1,13 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+	SignComparatorTest.Test1();
+	SignComparatorTest.Test2();
+	SignComparatorTest.Test3();
+	SignComparatorTest.Test4();
+
+
+    }
+}
