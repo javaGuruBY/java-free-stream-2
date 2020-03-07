@@ -1,22 +1,93 @@
+
 package com.company;
 
-public class Main {
+public class LightColorDetectorTest {
+    //380 ... 449 - Фиолетовый ("Violet")
+//450 ... 494 - Синий ("Blue")
+//495 ... 569 - Зеленый ("Green")
+//570 ... 589 - Желтый ("Yellow")
+//590 ... 619 - Оранжевый ("Orange")
+//620 ... 750 - Красный ("Red")
+//Вне диапазонов - невидимый спектр ("Invisible Light")
 
-    public static void main(String[] args) {
-	// write your code here
-        //380 ... 449 - Фиолетовый ("Violet")
-        //450 ... 494 - Синий ("Blue")
-        //495 ... 569 - Зеленый ("Green")
-        //570 ... 589 - Желтый ("Yellow")
-        //590 ... 619 - Оранжевый ("Orange")
-        //620 ... 750 - Красный ("Red")
-        //Вне диапазонов - невидимый спектр ("Invisible Light")
-        System.out.println( LightColorDetector.detect(381));
-        System.out.println( LightColorDetector.detect(490));
-        System.out.println( LightColorDetector.detect(569));
-        System.out.println( LightColorDetector.detect(580));
-        System.out.println( LightColorDetector.detect(600));
-        System.out.println( LightColorDetector.detect(700));
-        System.out.println( LightColorDetector.detect(300));
+    private static void check(String actualValue, String expectedValue, String testName) {
+        if(actualValue.equals(expectedValue)){
+            System.out.println(testName + " has been passed!");
+        } else {
+            System.out.println(testName + ", has been failed!");
+            System.out.println("the actual value = " + actualValue + " is not equal to the expected =" + expectedValue);
+        }
+    }
+
+    public static void test1() {
+        String actualValue="Violet";
+        int testValue=388;
+        String expectedValue=LightColorDetector.detect(testValue);
+        String testName="Test 1";
+        check(actualValue, expectedValue, testName);
+
+    }
+
+    public static void test2() {
+        String actualValue="Blue";
+        int testValue=454;
+        String expectedValue=LightColorDetector.detect(testValue);
+        String testName="Test 3";
+        check(actualValue, expectedValue, testName);
+
+    }
+
+    public static void test3() {
+        String actualValue="Green";
+        int testValue=500;
+        String expectedValue=LightColorDetector.detect(testValue);
+        String testName="Test 3";
+        check(actualValue, expectedValue, testName);
+
+    }
+
+    public static void test4() {
+        String actualValue="Violet";
+        int testValue=388;
+        String expectedValue=LightColorDetector.detect(testValue);
+        String testName="Test 4";
+        check(actualValue, expectedValue, testName);
+
+    }
+
+    public static void test5() {
+        String actualValue="Yellow";
+        int testValue=580;
+        String expectedValue=LightColorDetector.detect(testValue);
+        String testName="Test 5";
+        check(actualValue, expectedValue, testName);
+
+    }
+
+    public static void test6() {
+        String actualValue="Orange";
+        int testValue=600;
+        String expectedValue=LightColorDetector.detect(testValue);
+        String testName="Test 6";
+        check(actualValue, expectedValue, testName);
+
+    }
+
+    public static void test7() {
+        String actualValue="Red";
+        int testValue=700;
+        String expectedValue=LightColorDetector.detect(testValue);
+        String testName="Test 7";
+        check(actualValue, expectedValue, testName);
+
+    }
+
+    public static void test8() {
+        String actualValue="Invisible light";
+        int testValue=5;
+        String expectedValue=LightColorDetector.detect(testValue);
+        String testName="Test 7";
+        check(actualValue, expectedValue, testName);
+
     }
 }
