@@ -1,18 +1,42 @@
 package com.company;
 
-import javax.xml.crypto.dsig.keyinfo.PGPData;
+public class PhraseAnalyserTest {
 
-public class Main {
-
-    public static void main(String[] args) {
-	// write your code here
-        PhraseAnalyser x=new PhraseAnalyser();
-        String str="Make great again";
-        System.out.println(x.analyse(str));
-        System.out.println(x.analyse("Make some word great "));
-        System.out.println(x.analyse(" some word great again"));
-        System.out.println(x.analyse("Make some word  again"));
-        System.out.println(x.analyse(" some word "));
-
+    public static void check(String actualValue, String expectedValue, String testName) {
+        if(actualValue.equals(expectedValue)){
+            System.out.println(testName + " has been passed!");
+        } else {
+            System.out.println(testName + ", has been failed!");
+            System.out.println("the actual value = " + actualValue + " is not equal to the expected =" + expectedValue);
+        }
+    }
+    public static void test1()
+    {
+        String actualValue="It stands no chance";
+        String testValue="Make abrakadabra  great again";
+        String expectedValue= PhraseAnalyser.analyse(testValue);
+        String testName="Test number 1";
+        check(actualValue,expectedValue,testName);
+    }
+    public static void test2()
+    {
+        String actualValue="It could be worse";
+        String expectedValue= PhraseAnalyser.analyse("abrakadabra  great again");
+        String testName="Test number 2";
+        check(actualValue,expectedValue,testName);
+    }
+    public static void test3()
+    {
+        String actualValue="It could be worse";
+        String expectedValue= PhraseAnalyser.analyse("Make abrakadabra ");
+        String testName="Test number 3";
+        check(actualValue,expectedValue,testName);
+    }
+    public static void test4()
+    {
+        String actualValue="It is fine, really";
+        String expectedValue= PhraseAnalyser.analyse("abrakadabra abrakadabra abrakadabra abrakadabra ");
+        String testName="Test number 4";
+        check(actualValue,expectedValue,testName);
     }
 }
