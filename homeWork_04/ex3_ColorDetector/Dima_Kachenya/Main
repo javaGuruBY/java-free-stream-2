@@ -1,0 +1,16 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+        LightColorDetectorTest.test1();
+        LightColorDetectorTest.test2();
+        LightColorDetectorTest.test3();
+        LightColorDetectorTest.test4();
+        LightColorDetectorTest.test5();
+        LightColorDetectorTest.test6();
+        LightColorDetectorTest.test7();
+        LightColorDetectorTest.test8();
+    }
+}
