@@ -1,10 +1,47 @@
 package com.company;
 
-public class Main {
-    public static void main(String[] args) {
-	// write your code here
-        System.out.println(SignComparator.compare(15));
-        System.out.println(SignComparator.compare(0));
-        System.out.println(SignComparator.compare(-15));
+public class SignComparatorTest {
+
+
+    public static void testMySignComparator(String actualResult, String expectedResult, String testName) {
+        if(actualResult.equals(expectedResult)){
+            System.out.println(testName + " has passed!");
+        } else {
+            System.out.println(testName + " is failed!");
+            System.out.println("Expected \"" + expectedResult + "\" but was \"" + actualResult + "\"");
+        }
     }
+
+    public static void Test1() {
+        String testName="Test number one";
+        int testPositiveNumber=2;
+        String actualResult="Number is positive";
+        String expectedResult=SignComparator.compare(testPositiveNumber);
+        SignComparatorTest.testMySignComparator(actualResult, expectedResult, testName);
+    }
+
+    public static void Test2() {
+        String testName="Test number two";
+        int testPositiveNumber=0;
+        String actualResult="Number is equal to zero";
+        String expectedResult=SignComparator.compare(testPositiveNumber);
+        SignComparatorTest.testMySignComparator(actualResult, expectedResult, testName);
+    }
+
+    public static void Test3() {
+        String testName="Test number three";
+        int testPositiveNumber=-1;
+        String actualResult="Number is negative";
+        String expectedResult=SignComparator.compare(testPositiveNumber);
+        SignComparatorTest.testMySignComparator(actualResult, expectedResult, testName);
+    }
+    public static void Test4() {
+        String testName="Test Error";
+        int testPositiveNumber=-1;
+        String actualResult="Number is positive";
+        String expectedResult=SignComparator.compare(testPositiveNumber);
+        SignComparatorTest.testMySignComparator(actualResult, expectedResult, testName);
+    }
+
+
 }
