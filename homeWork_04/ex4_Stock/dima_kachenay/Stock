@@ -1,0 +1,36 @@
+package com.company;
+
+public class Stock {
+    public String companyName;
+    public double currentPrice;
+    public double starterPrice;
+    public double maxPrice;
+    public double minPrice;
+
+    public Stock(String companyName, double starterPrice) {
+        this.companyName=companyName;
+        this.starterPrice=starterPrice;
+        maxPrice=starterPrice;
+        minPrice=starterPrice;
+        currentPrice=starterPrice;
+
+    }
+
+    public void updatePrice(int newPrice) {
+        currentPrice=newPrice;
+        if(newPrice>maxPrice)
+            maxPrice=newPrice;
+        else if(minPrice>newPrice)
+            minPrice=newPrice;
+    }
+
+    @Override
+    public String toString() {
+        return "Имя компании :" + companyName +
+                "\nТекущая цена : " + currentPrice +
+                "\nМаксимальная цена :" + maxPrice +
+                "\nМинимальная цена :" + minPrice;
+    }
+
+
+}
