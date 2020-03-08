@@ -1,0 +1,11 @@
+package com.company;
+
+import sun.rmi.server.UnicastServerRef;
+
+public class Main {
+
+    public static void main(String[] args) {
+	UserLoginServerTest.test1();
+
+	}
+}
