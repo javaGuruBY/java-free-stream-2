@@ -2,8 +2,8 @@ package by.aliaksandrhorosko;
 
 public class MathOperationsDemo {
     public static void main(String[] args) {
-        int a = 4;
-        int b = 16;
+        int a = 5;
+        int b = 15;
         int result = a + b;
         int result1 = b - a;
         int result2 = b / a;
